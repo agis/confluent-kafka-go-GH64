@@ -1,0 +1,383 @@
+%7|1498471998.258|MEMBERID|rdkafka#consumer-1| [thrd:app]: Group "foo": updating member id "(not-set)" -> ""
+%7|1498471998.258|MEMBERID|rdkafka#consumer-2| [thrd:app]: Group "foo": updating member id "(not-set)" -> ""
+%7|1498471998.258|MEMBERID|rdkafka#consumer-3| [thrd:app]: Group "foo": updating member id "(not-set)" -> ""
+%7|1498471998.258|MEMBERID|rdkafka#consumer-4| [thrd:app]: Group "foo": updating member id "(not-set)" -> ""
+%7|1498471998.258|BRKREASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management reassigned from broker (none) to :0/internal
+%7|1498471998.258|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed state init -> wait-broker (v1, join-state init)
+%7|1498471998.258|BRKASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management assigned to broker :0/internal
+%7|1498471998.258|BRKREASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management reassigned from broker (none) to :0/internal
+%7|1498471998.258|CGRPSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed state init -> wait-broker (v1, join-state init)
+Created Consumer rdkafka#consumer-1
+%7|1498471998.258|BRKASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management assigned to broker :0/internal
+Created Consumer rdkafka#consumer-4
+%7|1498471998.258|BRKREASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management reassigned from broker (none) to :0/internal
+%7|1498471998.258|CGRPSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed state init -> wait-broker (v1, join-state init)
+%7|1498471998.258|BRKASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management assigned to broker :0/internal
+%7|1498471998.258|BRKREASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management reassigned from broker (none) to :0/internal
+%7|1498471998.258|CGRPSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed state init -> wait-broker (v1, join-state init)
+%7|1498471998.258|BRKASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management assigned to broker :0/internal
+%7|1498471998.258|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op SUBSCRIBE (v0) in state wait-broker (join state init, v1 vs 0)
+%7|1498471998.258|SUBSCRIBE|rdkafka#consumer-4| [thrd:main]: Group "foo": subscribe to new subscription of 1 topics (join state init)
+%7|1498471998.258|UNSUBSCRIBE|rdkafka#consumer-4| [thrd:main]: Group "foo": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state init -> wait-unassign (v1, state wait-broker)
+%7|1498471998.258|UNASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": unassign done in state wait-broker (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v1, state wait-broker)
+%7|1498471998.258|CGRPQUERY|rdkafka#consumer-4| [thrd:main]: Group "foo": no broker available for coordinator query: intervaled in state wait-broker
+Created Consumer rdkafka#consumer-2
+Created Consumer rdkafka#consumer-3
+%7|1498471998.258|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op SUBSCRIBE (v0) in state wait-broker (join state init, v1 vs 0)
+%7|1498471998.258|SUBSCRIBE|rdkafka#consumer-1| [thrd:main]: Group "foo": subscribe to new subscription of 1 topics (join state init)
+%7|1498471998.258|UNSUBSCRIBE|rdkafka#consumer-1| [thrd:main]: Group "foo": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state init -> wait-unassign (v1, state wait-broker)
+%7|1498471998.258|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": unassign done in state wait-broker (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1498471998.258|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op SUBSCRIBE (v0) in state wait-broker (join state init, v1 vs 0)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v1, state wait-broker)
+%7|1498471998.258|SUBSCRIBE|rdkafka#consumer-2| [thrd:main]: Group "foo": subscribe to new subscription of 1 topics (join state init)
+%7|1498471998.258|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op SUBSCRIBE (v0) in state wait-broker (join state init, v1 vs 0)
+%7|1498471998.258|CGRPQUERY|rdkafka#consumer-1| [thrd:main]: Group "foo": no broker available for coordinator query: intervaled in state wait-broker
+%7|1498471998.258|UNSUBSCRIBE|rdkafka#consumer-2| [thrd:main]: Group "foo": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+%7|1498471998.258|SUBSCRIBE|rdkafka#consumer-3| [thrd:main]: Group "foo": subscribe to new subscription of 1 topics (join state init)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state init -> wait-unassign (v1, state wait-broker)
+%7|1498471998.258|UNSUBSCRIBE|rdkafka#consumer-3| [thrd:main]: Group "foo": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+%7|1498471998.258|UNASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": unassign done in state wait-broker (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state init -> wait-unassign (v1, state wait-broker)
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v1, state wait-broker)
+%7|1498471998.258|UNASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": unassign done in state wait-broker (join state wait-unassign): without new assignment: unassign (no previous assignment)
+%7|1498471998.258|CGRPQUERY|rdkafka#consumer-2| [thrd:main]: Group "foo": no broker available for coordinator query: intervaled in state wait-broker
+%7|1498471998.258|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v1, state wait-broker)
+%7|1498471998.258|CGRPQUERY|rdkafka#consumer-3| [thrd:main]: Group "foo": no broker available for coordinator query: intervaled in state wait-broker
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-2| [thrd:main]: Group "foo": effective subscription list changed from 0 to 1 topic(s):
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-3| [thrd:main]: Group "foo": effective subscription list changed from 0 to 1 topic(s):
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-4| [thrd:main]: Group "foo": effective subscription list changed from 0 to 1 topic(s):
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "foo": effective subscription list changed from 0 to 1 topic(s):
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-2| [thrd:main]:  Topic test-foo with 4 partition(s)
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-3| [thrd:main]:  Topic test-foo with 4 partition(s)
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-4| [thrd:main]:  Topic test-foo with 4 partition(s)
+%7|1498471998.311|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]:  Topic test-foo with 4 partition(s)
+%7|1498471999.261|BRKREASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management reassigned from broker :0/internal to kafka-b.example.com:9092/2
+%7|1498471999.261|BRKREASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management reassigned from broker :0/internal to kafka-b.example.com:9092/2
+%7|1498471999.261|BRKREASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management reassigned from broker :0/internal to kafka-b.example.com:9092/2
+%7|1498471999.261|BRKREASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management reassigned from broker :0/internal to kafka-b.example.com:9092/2
+%7|1498471999.261|BRKUNASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management unassigned from broker handle :0/internal
+%7|1498471999.261|BRKUNASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management unassigned from broker handle :0/internal
+%7|1498471999.261|BRKUNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management unassigned from broker handle :0/internal
+%7|1498471999.261|BRKUNASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management unassigned from broker handle :0/internal
+%7|1498471999.262|BRKASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management assigned to broker kafka-b.example.com:9092/2
+%7|1498471999.262|BRKASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management assigned to broker kafka-b.example.com:9092/2
+%7|1498471999.262|BRKASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management assigned to broker kafka-b.example.com:9092/2
+%7|1498471999.262|BRKASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management assigned to broker kafka-b.example.com:9092/2
+%7|1498471999.262|CGRPQUERY|rdkafka#consumer-3| [thrd:main]: kafka-b.example.com:9092/2: Group "foo": querying for coordinator: intervaled in state wait-broker
+%7|1498471999.262|CGRPQUERY|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: Group "foo": querying for coordinator: intervaled in state wait-broker
+%7|1498471999.262|CGRPQUERY|rdkafka#consumer-1| [thrd:main]: kafka-b.example.com:9092/2: Group "foo": querying for coordinator: intervaled in state wait-broker
+%7|1498471999.262|CGRPQUERY|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: Group "foo": querying for coordinator: intervaled in state wait-broker
+%7|1498471999.263|CGRPCOORD|rdkafka#consumer-1| [thrd:main]: kafka-b.example.com:9092/2: Group "foo" coordinator is kafka-b.example.com:9092 id 2
+%7|1498471999.263|CGRPCOORD|rdkafka#consumer-1| [thrd:main]: Group "foo" changing coordinator -1 -> 2
+%7|1498471999.263|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed state wait-broker -> wait-broker-transport (v1, join-state init)
+%7|1498471999.263|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed state wait-broker-transport -> up (v1, join-state init)
+%7|1498471999.263|JOIN|rdkafka#consumer-1| [thrd:main]: Group "foo": join with 1 (1) subscribed topic(s)
+%7|1498471999.263|CGRPMETADATA|rdkafka#consumer-1| [thrd:main]: consumer join: metadata for subscription is up to date (952ms old)
+%7|1498471999.263|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state init -> wait-join (v1, state up)
+%7|1498471999.263|CGRPCOORD|rdkafka#consumer-3| [thrd:main]: kafka-b.example.com:9092/2: Group "foo" coordinator is kafka-b.example.com:9092 id 2
+%7|1498471999.263|CGRPCOORD|rdkafka#consumer-3| [thrd:main]: Group "foo" changing coordinator -1 -> 2
+%7|1498471999.263|CGRPSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed state wait-broker -> wait-broker-transport (v1, join-state init)
+%7|1498471999.263|CGRPSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed state wait-broker-transport -> up (v1, join-state init)
+%7|1498471999.263|JOIN|rdkafka#consumer-3| [thrd:main]: Group "foo": join with 1 (1) subscribed topic(s)
+%7|1498471999.263|CGRPMETADATA|rdkafka#consumer-3| [thrd:main]: consumer join: metadata for subscription is up to date (952ms old)
+%7|1498471999.263|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state init -> wait-join (v1, state up)
+%7|1498471999.264|CGRPCOORD|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: Group "foo" coordinator is kafka-b.example.com:9092 id 2
+%7|1498471999.264|CGRPCOORD|rdkafka#consumer-4| [thrd:main]: Group "foo" changing coordinator -1 -> 2
+%7|1498471999.264|CGRPSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed state wait-broker -> wait-broker-transport (v1, join-state init)
+%7|1498471999.264|CGRPSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed state wait-broker-transport -> up (v1, join-state init)
+%7|1498471999.264|JOIN|rdkafka#consumer-4| [thrd:main]: Group "foo": join with 1 (1) subscribed topic(s)
+%7|1498471999.264|CGRPMETADATA|rdkafka#consumer-4| [thrd:main]: consumer join: metadata for subscription is up to date (953ms old)
+%7|1498471999.264|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state init -> wait-join (v1, state up)
+%7|1498471999.264|CGRPCOORD|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: Group "foo" coordinator is kafka-b.example.com:9092 id 2
+%7|1498471999.264|CGRPCOORD|rdkafka#consumer-2| [thrd:main]: Group "foo" changing coordinator -1 -> 2
+%7|1498471999.264|CGRPSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed state wait-broker -> wait-broker-transport (v1, join-state init)
+%7|1498471999.264|CGRPSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed state wait-broker-transport -> up (v1, join-state init)
+%7|1498471999.264|JOIN|rdkafka#consumer-2| [thrd:main]: Group "foo": join with 1 (1) subscribed topic(s)
+%7|1498471999.264|CGRPMETADATA|rdkafka#consumer-2| [thrd:main]: consumer join: metadata for subscription is up to date (953ms old)
+%7|1498471999.264|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state init -> wait-join (v1, state up)
+%7|1498471999.266|JOINGROUP|rdkafka#consumer-1| [thrd:main]: JoinGroup response: GenerationId 272, Protocol range, LeaderId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae (me), my MemberId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae, 1 members in group: (no error)
+%7|1498471999.266|MEMBERID|rdkafka#consumer-1| [thrd:main]: Group "foo": updating member id "" -> "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae"
+%7|1498471999.266|JOINGROUP|rdkafka#consumer-1| [thrd:main]: Elected leader for group "foo" with 1 member(s)
+%7|1498471999.266|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-join -> wait-metadata (v1, state up)
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" running range assignment for 1 member(s):
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae" (me) with 1 subscription(s):
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [-1]
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Topic test-foo with 4 partition(s) and 1 subscribing member(s)
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae": assigned topic test-foo partitions 0..3
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" range assignment for 1 member(s) finished in 0.026ms:
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae" (me) assigned 4 partition(s):
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [0]
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [1]
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [2]
+%7|1498471999.267|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [3]
+%7|1498471999.267|ASSIGNOR|rdkafka#consumer-1| [thrd:main]: Group "foo": "range" assignor run for 1 member(s)
+%7|1498471999.267|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-metadata -> wait-sync (v1, state up)
+%7|1498471999.268|SYNCGROUP|rdkafka#consumer-1| [thrd:main]: SyncGroup response: Broker: Group rebalance in progress (0 bytes of MemberState data)
+%7|1498471999.268|GRPSYNC|rdkafka#consumer-1| [thrd:main]: Group "foo": synchronization failed: Broker: Group rebalance in progress: rejoining
+%7|1498471999.268|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-sync -> init (v1, state up)
+%7|1498472000.265|JOIN|rdkafka#consumer-1| [thrd:main]: Group "foo": join with 1 (1) subscribed topic(s)
+%7|1498472000.265|CGRPMETADATA|rdkafka#consumer-1| [thrd:main]: consumer join: metadata for subscription is up to date (997ms old)
+%7|1498472000.265|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state init -> wait-join (v1, state up)
+%7|1498472000.267|JOINGROUP|rdkafka#consumer-2| [thrd:main]: JoinGroup response: GenerationId 273, Protocol range, LeaderId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae, my MemberId rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13, 0 members in group: (no error)
+%7|1498472000.267|MEMBERID|rdkafka#consumer-2| [thrd:main]: Group "foo": updating member id "" -> "rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13"
+%7|1498472000.267|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-join -> wait-sync (v1, state up)
+%7|1498472000.267|JOINGROUP|rdkafka#consumer-3| [thrd:main]: JoinGroup response: GenerationId 273, Protocol range, LeaderId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae, my MemberId rdkafka-97d07340-f915-4f04-b4fa-a790596880fd, 0 members in group: (no error)
+%7|1498472000.267|MEMBERID|rdkafka#consumer-3| [thrd:main]: Group "foo": updating member id "" -> "rdkafka-97d07340-f915-4f04-b4fa-a790596880fd"
+%7|1498472000.267|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-join -> wait-sync (v1, state up)
+%7|1498472000.267|JOINGROUP|rdkafka#consumer-4| [thrd:main]: JoinGroup response: GenerationId 273, Protocol range, LeaderId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae, my MemberId rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230, 0 members in group: (no error)
+%7|1498472000.267|MEMBERID|rdkafka#consumer-4| [thrd:main]: Group "foo": updating member id "" -> "rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230"
+%7|1498472000.267|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-join -> wait-sync (v1, state up)
+%7|1498472000.268|JOINGROUP|rdkafka#consumer-1| [thrd:main]: JoinGroup response: GenerationId 273, Protocol range, LeaderId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae (me), my MemberId rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae, 4 members in group: (no error)
+%7|1498472000.268|JOINGROUP|rdkafka#consumer-1| [thrd:main]: Elected leader for group "foo" with 4 member(s)
+%7|1498472000.268|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-join -> wait-metadata (v1, state up)
+%7|1498472000.268|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" running range assignment for 4 member(s):
+%7|1498472000.268|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13" with 1 subscription(s):
+%7|1498472000.268|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [-1]
+%7|1498472000.268|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-97d07340-f915-4f04-b4fa-a790596880fd" with 1 subscription(s):
+%7|1498472000.268|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [-1]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230" with 1 subscription(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [-1]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae" (me) with 1 subscription(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [-1]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Topic test-foo with 4 partition(s) and 4 subscribing member(s)
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13": assigned topic test-foo partitions 0..0
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae": assigned topic test-foo partitions 1..1
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-97d07340-f915-4f04-b4fa-a790596880fd": assigned topic test-foo partitions 2..2
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: range: Member "rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230": assigned topic test-foo partitions 3..3
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" range assignment for 4 member(s) finished in 0.075ms:
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13" assigned 1 partition(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [0]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-97d07340-f915-4f04-b4fa-a790596880fd" assigned 1 partition(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [2]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230" assigned 1 partition(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [3]
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:  Member "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae" (me) assigned 1 partition(s):
+%7|1498472000.269|ASSIGN|rdkafka#consumer-1| [thrd:main]:   test-foo [1]
+%7|1498472000.269|ASSIGNOR|rdkafka#consumer-1| [thrd:main]: Group "foo": "range" assignor run for 4 member(s)
+%7|1498472000.269|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-metadata -> wait-sync (v1, state up)
+%7|1498472000.271|SYNCGROUP|rdkafka#consumer-2| [thrd:main]: SyncGroup response: Success (28 bytes of MemberState data)
+%7|1498472000.271|ASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": delegating assign of 1 partition(s) to application rebalance callback on queue rd_kafka_cgrp_new: new assignment
+%7|1498472000.271|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-sync -> wait-assign-rebalance_cb (v1, state up)
+%7|1498472000.271|HEARTBEAT|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472000.272|SYNCGROUP|rdkafka#consumer-4| [thrd:main]: SyncGroup response: Success (28 bytes of MemberState data)
+%7|1498472000.272|ASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": delegating assign of 1 partition(s) to application rebalance callback on queue rd_kafka_cgrp_new: new assignment
+%7|1498472000.272|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-sync -> wait-assign-rebalance_cb (v1, state up)
+AssignedPartitions: [test-foo[0]@unset]
+%7|1498472000.272|HEARTBEAT|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472000.272|SYNCGROUP|rdkafka#consumer-3| [thrd:main]: SyncGroup response: Success (28 bytes of MemberState data)
+%7|1498472000.272|ASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": delegating assign of 1 partition(s) to application rebalance callback on queue rd_kafka_cgrp_new: new assignment
+%7|1498472000.272|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-sync -> wait-assign-rebalance_cb (v1, state up)
+%7|1498472000.272|HEARTBEAT|rdkafka#consumer-3| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472000.272|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op ASSIGN (v0) in state up (join state wait-assign-rebalance_cb, v1 vs 0)
+%7|1498472000.272|ASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": new assignment of 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.272|BARRIER|rdkafka#consumer-2| [thrd:main]: Group "foo": rd_kafka_cgrp_assign:2198: new version barrier v2
+%7|1498472000.272|ASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": assigning 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.272|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-assign-rebalance_cb -> assigned (v2, state up)
+%7|1498472000.272|BARRIER|rdkafka#consumer-2| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v3
+%7|1498472000.272|FETCHSTART|rdkafka#consumer-2| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=no, v3, line 2243)
+%7|1498472000.272|SYNCGROUP|rdkafka#consumer-1| [thrd:main]: SyncGroup response: Success (28 bytes of MemberState data)
+AssignedPartitions: [test-foo[3]@unset]
+%7|1498472000.272|OFFSET|rdkafka#consumer-2| [thrd:main]: Fetch 1 offsets with v3
+%7|1498472000.272|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": delegating assign of 1 partition(s) to application rebalance callback on queue rd_kafka_cgrp_new: new assignment
+%7|1498472000.272|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op ASSIGN (v0) in state up (join state wait-assign-rebalance_cb, v1 vs 0)
+AssignedPartitions: [test-foo[2]@unset]
+%7|1498472000.272|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-sync -> wait-assign-rebalance_cb (v1, state up)
+%7|1498472000.272|ASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": new assignment of 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.272|HEARTBEAT|rdkafka#consumer-1| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472000.272|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op ASSIGN (v0) in state up (join state wait-assign-rebalance_cb, v1 vs 0)
+%7|1498472000.272|BARRIER|rdkafka#consumer-4| [thrd:main]: Group "foo": rd_kafka_cgrp_assign:2198: new version barrier v2
+%7|1498472000.272|ASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": new assignment of 1 partition(s) in join state wait-assign-rebalance_cb
+AssignedPartitions: [test-foo[1]@unset]
+%7|1498472000.272|ASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": assigning 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.273|BARRIER|rdkafka#consumer-3| [thrd:main]: Group "foo": rd_kafka_cgrp_assign:2198: new version barrier v2
+%7|1498472000.273|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-assign-rebalance_cb -> assigned (v2, state up)
+%7|1498472000.273|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op ASSIGN (v0) in state up (join state wait-assign-rebalance_cb, v1 vs 0)
+%7|1498472000.273|ASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": assigning 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.273|BARRIER|rdkafka#consumer-4| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v3
+%7|1498472000.273|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": new assignment of 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.273|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-assign-rebalance_cb -> assigned (v2, state up)
+%7|1498472000.273|FETCHSTART|rdkafka#consumer-4| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=no, v3, line 2243)
+%7|1498472000.273|BARRIER|rdkafka#consumer-3| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v3
+%7|1498472000.273|OFFSET|rdkafka#consumer-4| [thrd:main]: Fetch 1 offsets with v3
+%7|1498472000.273|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "foo": rd_kafka_cgrp_assign:2198: new version barrier v2
+%7|1498472000.273|FETCHSTART|rdkafka#consumer-3| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=no, v3, line 2243)
+%7|1498472000.273|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": assigning 1 partition(s) in join state wait-assign-rebalance_cb
+%7|1498472000.273|OFFSET|rdkafka#consumer-3| [thrd:main]: Fetch 1 offsets with v3
+%7|1498472000.273|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-assign-rebalance_cb -> assigned (v2, state up)
+%7|1498472000.273|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v3
+%7|1498472000.273|FETCHSTART|rdkafka#consumer-1| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=no, v3, line 2243)
+%7|1498472000.273|OFFSET|rdkafka#consumer-1| [thrd:main]: Fetch 1 offsets with v3
+%7|1498472000.273|OFFSET|rdkafka#consumer-2| [thrd:main]: Topic test-foo [0]: setting default offset INVALID
+%7|1498472000.273|BARRIER|rdkafka#consumer-2| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v4
+%7|1498472000.273|FETCHSTART|rdkafka#consumer-2| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=yes, v4, line 1497)
+%7|1498472000.273|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state assigned -> started (v4, state up)
+%7|1498472000.273|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op PARTITION_JOIN in state up (join state started, v4) for test-foo [0]
+%7|1498472000.273|PARTADD|rdkafka#consumer-2| [thrd:main]: Group "foo": add test-foo [0]
+%7|1498472000.274|OFFSET|rdkafka#consumer-4| [thrd:main]: Topic test-foo [3]: setting default offset INVALID
+%7|1498472000.274|BARRIER|rdkafka#consumer-4| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v4
+%7|1498472000.274|FETCHSTART|rdkafka#consumer-4| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=yes, v4, line 1497)
+%7|1498472000.274|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state assigned -> started (v4, state up)
+%7|1498472000.274|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op PARTITION_JOIN in state up (join state started, v4) for test-foo [3]
+%7|1498472000.274|PARTADD|rdkafka#consumer-4| [thrd:main]: Group "foo": add test-foo [3]
+%7|1498472000.274|OFFSET|rdkafka#consumer-3| [thrd:main]: Topic test-foo [2]: setting default offset INVALID
+%7|1498472000.274|BARRIER|rdkafka#consumer-3| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v4
+%7|1498472000.274|FETCHSTART|rdkafka#consumer-3| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=yes, v4, line 1497)
+%7|1498472000.274|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state assigned -> started (v4, state up)
+%7|1498472000.274|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op PARTITION_JOIN in state up (join state started, v4) for test-foo [2]
+%7|1498472000.274|PARTADD|rdkafka#consumer-3| [thrd:main]: Group "foo": add test-foo [2]
+%7|1498472000.274|OFFSET|rdkafka#consumer-1| [thrd:main]: Topic test-foo [1]: setting default offset INVALID
+%7|1498472000.274|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "foo": rd_kafka_cgrp_partitions_fetch_start0:1568: new version barrier v4
+%7|1498472000.274|FETCHSTART|rdkafka#consumer-1| [thrd:main]: Group "foo": starting fetchers for 1 assigned partition(s) in join-state assigned (usable_offsets=yes, v4, line 1497)
+%7|1498472000.274|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state assigned -> started (v4, state up)
+%7|1498472000.274|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op PARTITION_JOIN in state up (join state started, v4) for test-foo [1]
+%7|1498472000.274|PARTADD|rdkafka#consumer-1| [thrd:main]: Group "foo": add test-foo [1]
+Message on test-foo[0]@83:
+unD7ekDCBm8xFruiiGSQ3aATxspyISMr
+%7|1498472001.275|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op OFFSET_COMMIT (v0) in state up (join state started, v4 vs 0)
+%7|1498472001.275|HEARTBEAT|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472001.278|COMMIT|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: OffsetCommit for 1 partition(s): manual: returned: Success
+Message on test-foo[0]@84:
+yBW8TXLtn81PYPaTZ1DyAopdoOshOEfW
+%7|1498472001.278|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op OFFSET_COMMIT (v0) in state up (join state started, v4 vs 0)
+%7|1498472001.281|COMMIT|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: OffsetCommit for 1 partition(s): manual: returned: Success
+Reached EOF at test-foo[2]@82(Broker: No more messages)
+Reached EOF at test-foo[3]@87(Broker: No more messages)
+Reached EOF at test-foo[0]@85(Broker: No more messages)
+Reached EOF at test-foo[1]@91(Broker: No more messages)
+Message on test-foo[3]@87:
+agZir7wePKJewiyDfZQHLXZrGuvIO6MO
+%7|1498472002.015|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op OFFSET_COMMIT (v0) in state up (join state started, v4 vs 0)
+%7|1498472002.015|HEARTBEAT|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472002.018|COMMIT|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: OffsetCommit for 1 partition(s): manual: returned: Success
+Reached EOF at test-foo[3]@88(Broker: No more messages)
+%7|1498472002.269|HEARTBEAT|rdkafka#consumer-3| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472002.269|HEARTBEAT|rdkafka#consumer-1| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+Signalling consumers to close...
+I'm rdkafka#consumer-3 and I'm calling Close()...
+I'm rdkafka#consumer-1 and I'm calling Close()...
+I'm rdkafka#consumer-4 and I'm calling Close()...
+I'm rdkafka#consumer-2 and I'm calling Close()...
+%7|1498472003.270|HEARTBEAT|rdkafka#consumer-2| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472003.270|HEARTBEAT|rdkafka#consumer-4| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472003.270|HEARTBEAT|rdkafka#consumer-3| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472003.270|HEARTBEAT|rdkafka#consumer-1| [thrd:main]: kafka-b.example.com:9092/2: Heartbeat for group "foo" generation id 273
+%7|1498472003.329|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op TERMINATE (v0) in state up (join state started, v4 vs 0)
+%7|1498472003.329|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op TERMINATE (v0) in state up (join state started, v4 vs 0)
+%7|1498472003.329|CGRPTERM|rdkafka#consumer-1| [thrd:main]: Terminating group "foo" in state up with 1 partition(s)
+%7|1498472003.329|CGRPTERM|rdkafka#consumer-3| [thrd:main]: Terminating group "foo" in state up with 1 partition(s)
+%7|1498472003.329|UNSUBSCRIBE|rdkafka#consumer-1| [thrd:main]: Group "foo": unsubscribe from current subscription of 1 topics (leave group=yes, join state started, v4)
+%7|1498472003.329|UNSUBSCRIBE|rdkafka#consumer-3| [thrd:main]: Group "foo": unsubscribe from current subscription of 1 topics (leave group=yes, join state started, v4)
+%7|1498472003.329|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "foo": clearing subscribed topics list (1)
+%7|1498472003.329|SUBSCRIPTION|rdkafka#consumer-3| [thrd:main]: Group "foo": clearing subscribed topics list (1)
+%7|1498472003.329|SUBSCRIPTION|rdkafka#consumer-1| [thrd:main]: Group "foo": effective subscription list changed from 1 to 0 topic(s):
+%7|1498472003.329|SUBSCRIPTION|rdkafka#consumer-3| [thrd:main]: Group "foo": effective subscription list changed from 1 to 0 topic(s):
+%7|1498472003.329|ASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": delegating revoke of 1 partition(s) to application rebalance callback on queue rd_kafka_consumer_close: unsubscribe
+%7|1498472003.329|ASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": delegating revoke of 1 partition(s) to application rebalance callback on queue rd_kafka_consumer_close: unsubscribe
+%7|1498472003.329|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state started -> wait-revoke-rebalance_cb (v4, state up)
+%7|1498472003.329|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state started -> wait-revoke-rebalance_cb (v4, state up)
+%7|1498472003.329|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-revoke-rebalance_cb -> wait-unassign (v4, state up)
+%7|1498472003.329|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-revoke-rebalance_cb -> wait-unassign (v4, state up)
+%7|1498472003.330|BARRIER|rdkafka#consumer-1| [thrd:main]: Group "foo": rd_kafka_cgrp_unassign:2114: new version barrier v5
+%7|1498472003.330|BARRIER|rdkafka#consumer-3| [thrd:main]: Group "foo": rd_kafka_cgrp_unassign:2114: new version barrier v5
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": unassigning 1 partition(s) (v5)
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": unassigning 1 partition(s) (v5)
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-3| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign (no previous assignment)
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-3| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign (no previous assignment)
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-1| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-3| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-1| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-3| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-1| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-3| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op PARTITION_LEAVE in state up (join state wait-unassign, v5) for test-foo [1]
+%7|1498472003.330|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op PARTITION_LEAVE in state up (join state wait-unassign, v5) for test-foo [2]
+%7|1498472003.330|PARTDEL|rdkafka#consumer-1| [thrd:main]: Group "foo": delete test-foo [1]
+%7|1498472003.330|PARTDEL|rdkafka#consumer-3| [thrd:main]: Group "foo": delete test-foo [2]
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-1| [thrd:main]: Group "foo": waiting for 0 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPTERM|rdkafka#consumer-3| [thrd:main]: Group "foo": waiting for 0 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.330|CGRPOP|rdkafka#consumer-1| [thrd:main]: Group "foo" received op REPLY:FETCH_STOP in state up (join state wait-unassign, v5) for test-foo [1]
+%7|1498472003.330|CGRPOP|rdkafka#consumer-3| [thrd:main]: Group "foo" received op REPLY:FETCH_STOP in state up (join state wait-unassign, v5) for test-foo [2]
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo": unassign done in state up (join state wait-unassign): without new assignment: FETCH_STOP done
+%7|1498472003.330|UNASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo": unassign done in state up (join state wait-unassign): without new assignment: FETCH_STOP done
+%7|1498472003.330|LEAVE|rdkafka#consumer-1| [thrd:main]: Group "foo": leave
+%7|1498472003.330|LEAVE|rdkafka#consumer-3| [thrd:main]: Group "foo": leave
+%7|1498472003.330|CGRPJOINSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v5, state up)
+%7|1498472003.330|CGRPSTATE|rdkafka#consumer-1| [thrd:main]: Group "foo" changed state up -> term (v5, join-state init)
+%7|1498472003.330|CGRPJOINSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v5, state up)
+%7|1498472003.330|BRKUNASSIGN|rdkafka#consumer-1| [thrd:main]: Group "foo" management unassigned from broker handle kafka-b.example.com:9092/2
+%7|1498472003.330|CGRPSTATE|rdkafka#consumer-3| [thrd:main]: Group "foo" changed state up -> term (v5, join-state init)
+%7|1498472003.330|BRKUNASSIGN|rdkafka#consumer-3| [thrd:main]: Group "foo" management unassigned from broker handle kafka-b.example.com:9092/2
+%7|1498472003.330|DESTROY|rdkafka#consumer-1| [thrd:app]: Terminating instance
+%7|1498472003.330|DESTROY|rdkafka#consumer-3| [thrd:app]: Terminating instance
+%7|1498472003.330|DESTROY|rdkafka#consumer-1| [thrd:main]: Destroy internal
+%7|1498472003.330|DESTROY|rdkafka#consumer-1| [thrd:main]: Removing all topics
+%7|1498472003.330|DESTROY|rdkafka#consumer-3| [thrd:main]: Destroy internal
+%7|1498472003.330|DESTROY|rdkafka#consumer-3| [thrd:main]: Removing all topics
+%7|1498472003.334|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op TERMINATE (v0) in state up (join state started, v4 vs 0)
+%7|1498472003.334|CGRPTERM|rdkafka#consumer-2| [thrd:main]: Terminating group "foo" in state up with 1 partition(s)
+%7|1498472003.334|UNSUBSCRIBE|rdkafka#consumer-2| [thrd:main]: Group "foo": unsubscribe from current subscription of 1 topics (leave group=yes, join state started, v4)
+%7|1498472003.334|SUBSCRIPTION|rdkafka#consumer-2| [thrd:main]: Group "foo": clearing subscribed topics list (1)
+%7|1498472003.334|SUBSCRIPTION|rdkafka#consumer-2| [thrd:main]: Group "foo": effective subscription list changed from 1 to 0 topic(s):
+%7|1498472003.334|ASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": delegating revoke of 1 partition(s) to application rebalance callback on queue rd_kafka_consumer_close: unsubscribe
+%7|1498472003.334|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state started -> wait-revoke-rebalance_cb (v4, state up)
+%7|1498472003.334|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-revoke-rebalance_cb -> wait-unassign (v4, state up)
+%7|1498472003.334|BARRIER|rdkafka#consumer-2| [thrd:main]: Group "foo": rd_kafka_cgrp_unassign:2114: new version barrier v5
+%7|1498472003.334|UNASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": unassigning 1 partition(s) (v5)
+%7|1498472003.334|UNASSIGN|rdkafka#consumer-2| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign
+%7|1498472003.334|UNASSIGN|rdkafka#consumer-2| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign (no previous assignment)
+%7|1498472003.334|CGRPTERM|rdkafka#consumer-2| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.334|CGRPTERM|rdkafka#consumer-2| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.334|CGRPTERM|rdkafka#consumer-2| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.334|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op PARTITION_LEAVE in state up (join state wait-unassign, v5) for test-foo [0]
+%7|1498472003.334|PARTDEL|rdkafka#consumer-2| [thrd:main]: Group "foo": delete test-foo [0]
+%7|1498472003.334|CGRPTERM|rdkafka#consumer-2| [thrd:main]: Group "foo": waiting for 0 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.334|CGRPOP|rdkafka#consumer-2| [thrd:main]: Group "foo" received op REPLY:FETCH_STOP in state up (join state wait-unassign, v5) for test-foo [0]
+%7|1498472003.334|UNASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo": unassign done in state up (join state wait-unassign): without new assignment: FETCH_STOP done
+%7|1498472003.334|LEAVE|rdkafka#consumer-2| [thrd:main]: Group "foo": leave
+%7|1498472003.334|CGRPJOINSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v5, state up)
+%7|1498472003.334|CGRPSTATE|rdkafka#consumer-2| [thrd:main]: Group "foo" changed state up -> term (v5, join-state init)
+%7|1498472003.334|BRKUNASSIGN|rdkafka#consumer-2| [thrd:main]: Group "foo" management unassigned from broker handle kafka-b.example.com:9092/2
+%7|1498472003.334|DESTROY|rdkafka#consumer-2| [thrd:app]: Terminating instance
+%7|1498472003.334|DESTROY|rdkafka#consumer-2| [thrd:main]: Destroy internal
+%7|1498472003.334|DESTROY|rdkafka#consumer-2| [thrd:main]: Removing all topics
+%7|1498472003.356|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op TERMINATE (v0) in state up (join state started, v4 vs 0)
+%7|1498472003.356|CGRPTERM|rdkafka#consumer-4| [thrd:main]: Terminating group "foo" in state up with 1 partition(s)
+%7|1498472003.356|UNSUBSCRIBE|rdkafka#consumer-4| [thrd:main]: Group "foo": unsubscribe from current subscription of 1 topics (leave group=yes, join state started, v4)
+%7|1498472003.356|SUBSCRIPTION|rdkafka#consumer-4| [thrd:main]: Group "foo": clearing subscribed topics list (1)
+%7|1498472003.356|SUBSCRIPTION|rdkafka#consumer-4| [thrd:main]: Group "foo": effective subscription list changed from 1 to 0 topic(s):
+%7|1498472003.356|ASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": delegating revoke of 1 partition(s) to application rebalance callback on queue rd_kafka_consumer_close: unsubscribe
+%7|1498472003.356|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state started -> wait-revoke-rebalance_cb (v4, state up)
+%7|1498472003.356|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-revoke-rebalance_cb -> wait-unassign (v4, state up)
+%7|1498472003.356|BARRIER|rdkafka#consumer-4| [thrd:main]: Group "foo": rd_kafka_cgrp_unassign:2114: new version barrier v5
+%7|1498472003.356|UNASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": unassigning 1 partition(s) (v5)
+%7|1498472003.356|UNASSIGN|rdkafka#consumer-4| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign
+%7|1498472003.356|UNASSIGN|rdkafka#consumer-4| [thrd:main]: Unassign not done yet (1 wait_unassign, 1 assigned, 0 wait commit): unassign (no previous assignment)
+%7|1498472003.356|CGRPTERM|rdkafka#consumer-4| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.356|CGRPTERM|rdkafka#consumer-4| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.356|CGRPTERM|rdkafka#consumer-4| [thrd:main]: Group "foo": waiting for 1 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.356|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op PARTITION_LEAVE in state up (join state wait-unassign, v5) for test-foo [3]
+%7|1498472003.356|PARTDEL|rdkafka#consumer-4| [thrd:main]: Group "foo": delete test-foo [3]
+%7|1498472003.356|CGRPTERM|rdkafka#consumer-4| [thrd:main]: Group "foo": waiting for 0 toppar(s), 1 unassignment(s), 0 commit(s) (state up, join-state wait-unassign) before terminating
+%7|1498472003.356|CGRPOP|rdkafka#consumer-4| [thrd:main]: Group "foo" received op REPLY:FETCH_STOP in state up (join state wait-unassign, v5) for test-foo [3]
+%7|1498472003.356|UNASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo": unassign done in state up (join state wait-unassign): without new assignment: FETCH_STOP done
+%7|1498472003.356|LEAVE|rdkafka#consumer-4| [thrd:main]: Group "foo": leave
+%7|1498472003.356|CGRPJOINSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed join state wait-unassign -> init (v5, state up)
+%7|1498472003.356|CGRPSTATE|rdkafka#consumer-4| [thrd:main]: Group "foo" changed state up -> term (v5, join-state init)
+%7|1498472003.356|BRKUNASSIGN|rdkafka#consumer-4| [thrd:main]: Group "foo" management unassigned from broker handle kafka-b.example.com:9092/2
+%7|1498472003.356|DESTROY|rdkafka#consumer-4| [thrd:app]: Terminating instance
+%7|1498472003.356|DESTROY|rdkafka#consumer-4| [thrd:main]: Destroy internal
+%7|1498472003.356|DESTROY|rdkafka#consumer-4| [thrd:main]: Removing all topics
+%7|1498472003.446|MEMBERID|rdkafka#consumer-2| [thrd:app]: Group "foo": updating member id "rdkafka-2606cd63-f8d4-4df2-98cd-cc5dbfc5ea13" -> "(not-set)"
+%7|1498472003.446|MEMBERID|rdkafka#consumer-3| [thrd:app]: Group "foo": updating member id "rdkafka-97d07340-f915-4f04-b4fa-a790596880fd" -> "(not-set)"
+Bye from  rdkafka#consumer-2
+Bye from  rdkafka#consumer-3
+%7|1498472003.469|MEMBERID|rdkafka#consumer-4| [thrd:app]: Group "foo": updating member id "rdkafka-dbd97ea5-906b-45c3-a26d-804e3da76230" -> "(not-set)"
+Bye from  rdkafka#consumer-4
+%7|1498472003.506|MEMBERID|rdkafka#consumer-1| [thrd:app]: Group "foo": updating member id "rdkafka-6d1a13b1-8ebf-44e4-a1ec-9337e92304ae" -> "(not-set)"
+Bye from  rdkafka#consumer-1
+All consumers closed successfully. Bye
